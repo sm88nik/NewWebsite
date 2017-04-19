@@ -977,9 +977,9 @@ img {
     box-shadow: 0px 0px 30px #ccc;
 }
 
-.service-item:hover img {
+/*.service-item:hover img {
     transform: rotate(360deg);
-}
+}*/
 
 .service-item img {
     -webkit-transition: 0.3s;
