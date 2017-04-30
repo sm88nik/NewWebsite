@@ -958,11 +958,25 @@ img {
 
 
 /* ======================================
+ *  13. why Conversion rate matter
+/* ====================================== */
+
+.whyConversion ul li {
+    background-image: url(../img/service/Icon.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    height: 70px;
+    padding-top: 10px;
+}
+
+
+/* ======================================
  *  13. service
 /* ====================================== */
 
 .service-title-bg {
-    background: url(../img/service/shakeHand.jpg) no-repeat center center /cover;
+    background: url(../img/service/CRO1.jpg) no-repeat center center /cover;
 }
 
 .service-item {
@@ -1136,6 +1150,15 @@ img {
 
 .news-details-comment .media-object {
     max-width: inherit;
+}
+
+
+/* ======================================
+ *  16. Conversion rate
+/* ====================================== */
+
+.conversionRateLi {
+    list-style-type: disc;
 }
 
 
