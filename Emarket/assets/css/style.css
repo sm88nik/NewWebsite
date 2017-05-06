@@ -1,10 +1,10 @@
 /* =========================================
- 
+
 # Template Name: E-market
 # Author:
 # Description:
 # Version: 1.0
- 
+
 ========================================= */
 
 
@@ -38,7 +38,7 @@ Index
 # 23. footer
 # 24. responsive
 # 25. loading screen
- 
+
 */
 
 
@@ -990,7 +990,6 @@ img {
 .service-item:hover {
     box-shadow: 0px 0px 30px #ccc;
 }
-
 
 /*.service-item:hover img {
     transform: rotate(360deg);

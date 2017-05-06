@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="origin">
     <!-- Title tag -->
     <title>Conversion rate optimisation agency - Sydney CRO Agency - rumisolutions.com.au</title>
     <!-- favicon icon -->
@@ -552,8 +553,16 @@
                 <div class="col-md-6 col-sm-5">
                     <h4 class="fw-300 mb-30">Primary Contacts</h4>
                     <p class="mb-40">14/2 Findlay Ave. Roseville, NSW 2069</p>
-                    <p><i class="fa fa-phone c-00bcd4"></i> (+61) 406 202 911</p>
-                    <p><i class="fa fa-envelope-o c-00bcd4"></i> info@rumisolutions.com.au</p>
+                    <p>
+                    	<a href="tel:(+61)406202911" style="text-decoration: none;color:#666666">
+                    		<i class="fa fa-phone c-00bcd4"></i> (+61) 406 202 911
+                    	</a>
+                    </p>
+                    <p>
+                    	<a href="mailto:info@rumisolutions.com.au" style="text-decoration: none;color:#666666">
+                    		<i class="fa fa-envelope-o c-00bcd4"></i> info@rumisolutions.com.au
+                		</a>
+                    </p>
                     <h4 class="fw-300 mt-40 mb-30">We Are Social</h4>
                     <div class="social-icon">
                         <a href="#!" class="fa fa-facebook-square fa-2x c-666"></a>
@@ -566,17 +575,17 @@
                 <div class="col-md-6 col-sm-7">
                     <form action="...">
                         <label for="Name">Your Name</label>
-                        <input type="text" name="name" placeholder="Mark Dow" class="form-control" id="Name">
+                        <input type="text" name="name" placeholder="John Smith" class="form-control" id="Name">
                         <label for="Email">Your Email</label>
-                        <input type="email" name="email" placeholder="you@email.com" class="form-control" id="Email">
+                        <input type="email" name="email" placeholder="john@rumi.com" class="form-control" id="Email">
                         <label for="Message">Your Message</label>
-                        <textarea name="message" placeholder="Write something here" class="form-control" id="Message"></textarea>
-                        <a href="#!" class="center-block mt-60">
+                        <textarea name="message" placeholder="Write your message here" class="form-control" id="Message"></textarea>
+                        <a href="#!" class="center-block mt-60" id="sendMessageBtn">
                             <div class="btn-main">
                                 <div class="btn-container">
                                     <div class="btn-2">
                                         <div class="btn-slide"></div>
-                                        <div class="btn-label">Submit</div>
+                                        <div class="btn-label">Send</div>
                                     </div>
                                 </div>
                             </div>
@@ -590,13 +599,13 @@
     <!--========================================================
                             FOOTER TOP
   =========================================================-->
-    <section class="footer-top ptb-100">
+    <section class="footer-top ptb-50">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-4">
                     <img src="assets/img/logo/footer-logo.png" alt="..." class="img-responsive">
                     <p class="c-fff mt-30">
-                    	We are Australian based digital optimisation specialists who's considering your goals as objectives as our priority. At RUMI Solutions we help companies overcome business challenges and achieve exceptional results. Whether you’re looking to get to market faster, providing comprehensive customer experience by having personalised content, improving IT performance, or augmenting your in-house capabilities. It is our specialty to help your businesses on your goals.
+                    	We are Australian based digital optimisation specialists who's considering your goals and objectives as our priority. At RUMI Solutions we help companies overcome business challenges and achieve exceptional results. Whether you’re looking to get to market faster, providing comprehensive customer experience by having personalised content, improving IT performance, or augmenting your in-house capabilities. It is our specialty to help your businesses on your goals.
                     </p>
                 </div>
                 <div class="col-md-2 col-md-offset-1 col-sm-3">
@@ -689,6 +698,20 @@
             c2.animate(0.8); // Number from 0.0 to 1.0
             c3.animate(0.9); // Number from 0.0 to 1.0
             c4.animate(1.0); // Number from 0.0 to 1.0
+
+            // custom code
+            $("#sendMessageBtn").click(function() {
+            	$.ajax({
+				    url: "https://formspree.io/info@rumisolutions.com.au", 
+				    method: "POST",
+				    data: {
+				    	name: "hooman",
+				    	_replyto: "hoodeh@gmail.com",
+				    	message: "hello!"
+				    },
+				    dataType: "json"
+				});
+            });
         })(jQuery)
     </script>
 </body>
