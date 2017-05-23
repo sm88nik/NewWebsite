@@ -1047,6 +1047,15 @@ header {
 
 
 /* ======================================
+ *  13. development
+/* ====================================== */
+
+.development-title-bg {
+    background: url(../img/service/development.jpg) no-repeat center center /cover;
+}
+
+
+/* ======================================
  *  14. news
 /* ====================================== */
 
