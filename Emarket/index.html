@@ -136,7 +136,7 @@
                                 <div class="col-md-6 col-sm-8 col-xs-12">
                                     <h1 class="fw-900 c-fff">Improving Website Traffic</h1>
                                     <p class="mt-30 c-fff">Through improving website search rankings (SEO),
-                                        <br> eEmail marketing & social media marketing
+                                        <br> email marketing & social media marketing
                                         <br></p>
                                     <a href="CRO.html" class="mt-50 center-block btn-w">
                                         <div class="btn-main">
@@ -164,7 +164,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center mb-70">
-                    <h3 class="fw-400">Our <span class="c-00bcd4">Serviecs</span></h3>
+                    <h3 class="fw-400">Our <span class="c-00bcd4">Services</span></h3>
                 </div>
                 <div class="col-sm-4 wow">
                     <div class="service-item">
@@ -252,7 +252,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12 mt-70 text-center">
-                    <a href="service.html">
+                    <a href="CRO.html">
                         <div class="btn-main">
                             <div class="btn-container">
                                 <div class="btn-2">
@@ -333,7 +333,7 @@
                             </div>
                             <div class="col-md-6">
                                 <h5 class="fw-300 mb-20 mt-20">We Deliver</h5>
-                                <p>Unlike many businesses, we deliver what we promise in a defined time-frame.</p>
+                                <p>Unlike many businesses, we deliver what we promise in a defined time-frame</p>
                             </div>
                         </div>
                     </div>
@@ -361,7 +361,7 @@
                             </div>
                             <div class="col-md-6">
                                 <h5 class="fw-300 mb-20 mt-20">Adobe & Google Experts</h5>
-                                <p>We are experts in "Adobe Digital" and "Google" in order to manage and drive your Digital requirements</p>
+                                <p>We are experts in "Adobe Digital" and "Google" in order to manage and drive your digital requirements</p>
                             </div>
                         </div>
                     </div>
@@ -374,7 +374,7 @@
                             </div>
                             <div class="col-md-6">
                                 <h5 class="fw-300 mb-20 mt-20">Strategy</h5>
-                                <p>Experts in Identifying parts of your business that are underperforming and why</p>
+                                <p>Experts in identifying parts of your business that are underperforming and why</p>
                             </div>
                         </div>
                     </div>
@@ -441,18 +441,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center mb-40">
-                    <h2 class="fw-300 mb-20">About <span class="c-00bcd4">Rumi solutions</span></h2>
+                    <h2 class="fw-300 mb-20">About <span class="c-00bcd4">RUMI Solutions</span></h2>
                 </div>
                 <div class="col-md-12">
                     <h5 class="fw-400" style="text-align: center; color: #666666;margin-bottom: 40px; line-height: 1.4">
-                        Rumi Solutions Is An Australia-Based Digital Optimisation Specialist. We Are Experts In Providing Data Driven Personalised Experiences Across Own Media (CRO) And Paid Media (SEO) To Accelerate Return On Investment And Customer Satisfaction.
+                        RUMI Solutions is an Australia-based digital optimisation specialist. we are experts in providing data driven personalised experiences across own media (CRO) and paid media (SEO) to accelerate return on investment and customer satisfaction.
                     </h5>
                     <h6 class="fw-400" style="text-align: center; color: #666666;margin-bottom: 40px; line-height: 1.4">
-                        Co-founded by <span class="c-00bcd4">Seyed Mohammad Nikkhah</span> and <span class="c-00bcd4">Hooman Hoodeh</span>. Rumi Solutions works alongside your business to accelerate your return on investment by targeting the right people
+                        Founded by <span class="c-00bcd4">Seyed Mohammad Nikkhah</span> and <span class="c-00bcd4">Hooman Hoodeh</span>. RUMI Solutions works alongside your business to accelerate your return on investment by targeting the right people
                         at the right time.
                     </h6>
                     <h6 class="fw-400" style="text-align: center; color: #666666;line-height: 1.4">
-                        Our Professional Digital Optimisation Team Are Experts In Enabling Businesses To Connect With Their Prospects And Customers Via Effective Digital Marketing Solutions.
+                        Our professional digital optimisation team are experts in enabling businesses to connect with their prospects and customers via effective digital marketing solutions.
                     </h6>
                 </div>
             </div>
@@ -483,7 +483,7 @@
     <!-- partner end -->
     <!--========================================================
                           CONTACT
-  =========================================================-->
+    =========================================================-->
     <section class="contact ptb-100">
         <div class="container">
             <div class="row">
@@ -538,14 +538,14 @@
     <!-- contact end -->
     <!--========================================================
                             FOOTER TOP
-  =========================================================-->
+    =========================================================-->
     <section class="footer-top ptb-50">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-4">
                     <img src="assets/img/logo/footer-logo.png" alt="..." class="img-responsive">
                     <p class="c-fff mt-30">
-                        We are Australian based digital optimisation specialists who's considering your goals and objectives as our priority. At RUMI Solutions we help companies overcome business challenges and achieve exceptional results. Whether you’re looking to get to market
+                        We are Australian based digital optimisation specialists who's considering your goals and objectives as our priority. At RUMI Solutions we help companies overcome business challenges and achieve exceptional results. Whether you are looking to get to market
                         faster, providing comprehensive customer experience by having personalised content, improving IT performance, or augmenting your in-house capabilities. It is our specialty to help your businesses on your goals.
                     </p>
                 </div>
@@ -642,13 +642,27 @@
 
             // custom code
             $("#sendMessageBtn").click(function() {
+                var name = $("#Name").val();
+                var email = $("#Email").val();
+                var message = $("#Message").val();
+
+                if (name === "" || email === "" || message === "") {
+                    alert("Please fill all the fields");
+                    return;
+                }
+
+                var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                if (!regex.test(email)) {
+                    alert("Please enter valid email address")
+                }
+
                 $.ajax({
                     url: "https://formspree.io/info@rumisolutions.com.au",
                     method: "POST",
                     data: {
-                        name: "hooman",
-                        _replyto: "hoodeh@gmail.com",
-                        message: "hello!"
+                        name: name,
+                        _replyto: email,
+                        message: message
                     },
                     dataType: "json"
                 });
