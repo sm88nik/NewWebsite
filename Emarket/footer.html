@@ -11,8 +11,8 @@
                 <h4 class="fw-300 mb-30">Primary Contacts</h4>
                 <p class="mb-40">14/2 Findlay Ave. Roseville, NSW 2069</p>
                 <p>
-                    <a href="tel:(+61)406202911" style="text-decoration: none;color:#666666">
-                        <i class="fa fa-phone c-00bcd4"></i> (+61) 406 202 911
+                    <a href="tel:(+61)431114648" style="text-decoration: none;color:#666666">
+                        <i class="fa fa-phone c-00bcd4"></i> (+61) 431 114 648
                     </a>
                 </p>
                 <p>
@@ -136,7 +136,8 @@
 
             var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
             if (!regex.test(email)) {
-                alert("Please enter valid email address")
+                alert("Please enter valid email address");
+                return;
             }
 
             $.ajax({

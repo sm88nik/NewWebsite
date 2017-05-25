@@ -46,9 +46,9 @@
                     <div class="col-md-6">
                         <ul>
                             <a href="tel:(+61)431114648">
-                                <li><i class="fa"></i>Tel : (+61) 406 202 911</li>
+                                <li><i class="fa"></i>Tel : (+61) 431 114 648</li>
                             </a>
-                            <a href="mailto:mailto:info@rumisolutions.com.au">
+                            <a href="mailto:info@rumisolutions.com.au">
                                 <li><i class="fa fa-envelope"></i> info@rumisolutions.com.au</li>
                             </a>
                         </ul>
@@ -70,7 +70,7 @@
                                 <ul>
                                     <li><a href="index.html">HOME <i class="fa"></i></a>
                                     </li>
-                                    <li class="active"><a href="#">CRO <i class="fa"></i></a>
+                                    <li class="active"><a>CRO <i class="fa"></i></a>
                                         <!--<ul class="dropmenu">
                                             <li><a href="service.html">service</a></li>
                                             <li><a href="service-details.html">service Details</a></li>
@@ -197,7 +197,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center mb-70">
-                    <h2 class="fw-400 mb-20" style="color: white">Why does <span class="c-00bcd4"> conversion rate optimisation</span> matter?</h2>
+                    <h2 class="fw-400 mb-20" style="color: white">Why does <span class="c-00bcd4"> Conversion Rate Optimisation</span> Matter?</h2>
                 </div>
                 <div class="col-md-12 whyConversion">
                     <ul style="margin: 0 100px; color: whitesmoke !important">
@@ -233,7 +233,7 @@
             <div class="row">
                 <div class="row" style="margin-bottom: 30px">
                     <div class="col-md-12 text-center mb-70">
-                        <h2 class="fw-400 mb-20 c-00bcd4">Why Do Only A Few Websites Have Good Conversion Rates?</h2>
+                        <h2 class="fw-400 mb-20 c-00bcd4">Why do Only a Few Websites Have Good Conversion Rates?</h2>
                     </div>
                     <div class="col-md-12">
                         <div class="col-md-6 col-sm-5">
@@ -297,7 +297,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center mb-70">
-                    <h2 class="fw-400 mb-20 c-00bcd4">What we offer?</h2>
+                    <h2 class="fw-400 mb-20 c-00bcd4">What We Offer?</h2>
                 </div>
                 <div class="col-md-6 col-sm-7">
                     <div id="conversionLogo" style="display: block;margin: 0 auto;max-width: 54%;">
@@ -404,6 +404,7 @@
     <!-- partner end -->
 
     <!--========================================================
+<<<<<<< HEAD
                           CONTACT
   =========================================================-->
     <section class="contact ptb-100 ">
@@ -498,24 +499,11 @@
     </section>
     <!-- footer-top end -->
     <!--========================================================
+=======
+>>>>>>> d4ff1615ff48733c1bb353fe65d86a8f4832d7d3
                           FOOTER
   =========================================================-->
-    <footer class="ptb-30">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <p>&copy; 2017. All Rights Reserved. Designed by <a href="#!" class="c-00bcd4">RUMI Solutions</a></p>
-                </div>
-                <div class="col-sm-6">
-                    <ul>
-                        <li><a href="#!">Terms & Conditions</a></li>
-                        <li><a href="#!">.</a></li>
-                        <li><a href="#!">Privacy Policy</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div id="divFooter"></div>
     <!-- footer end -->
     <!-- jQuery js -->
     <script src="assets/js/jquery-1.12.0.min.js "></script>
@@ -533,6 +521,13 @@
     <script src="assets/js/SmoothScroll.js "></script>
     <!-- Custom js -->
     <script src="assets/js/custom.js "></script>
+    <script>
+        (function($) {
+            if ("#divFooter".length)
+                $("#divFooter").load("footer.html");
+
+        })(jQuery)
+    </script>
 </body>
 
 </html>
