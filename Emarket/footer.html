@@ -122,9 +122,10 @@
 <script src="assets/js/jquery-1.12.0.min.js"></script>
 
 <script>
-    (function($) {        
+    (function($) {
         // custom code
         $("#sendMessageBtn").click(function() {
+            $(".loading-overlay").css("display", "block");
             var name = $("#Name").val();
             var email = $("#Email").val();
             var message = $("#Message").val();
@@ -149,13 +150,14 @@
                     message: message
                 },
                 dataType: "json",
-                success: function(){
+                success: function() {
                     $("#Name").val("");
                     $("#Email").val("");
                     $("#Message").val("");
+                    $(".loading-overlay").css("display", "none");
                     alert("Your message sent successfully");
                 },
-                error: function(){
+                error: function() {
                     alert("Sending message failed, please try again later");
                 }
             });
