@@ -1555,9 +1555,9 @@ footer ul {
     }
     .slicknav_menu {
         display: block;
-        position: absolute;
+        /*position: absolute;
         right: 5px;
-        top: 112px;
+        top: 112px;*/
         background: transparent;
         z-index: 9;
     }
@@ -1682,7 +1682,13 @@ footer ul {
         margin-bottom: 30px;
     }
     .slicknav_menu {
-        top: 136px;
+        /*top: 136px;*/
+        position: fixed !important;
+        z-index: 100
+    }
+    .top-header .col-xs-8 {
+        width: 72.66%;
+        float: right;
     }
 }
 
