@@ -921,11 +921,11 @@ header {
 /* ====================================== */
 
 .slide-bg-1 {
-    background: url(../img/index/slider-1.jpg) no-repeat center center /cover #ddd;
+    background: url(../img/index/slider-1-min.jpg) no-repeat center center /cover #ddd;
 }
 
 .slide-bg-2 {
-    background: url(../img/index/slider-2.jpg) no-repeat center center /cover #ddd;
+    background: url(../img/index/slider-2-min.jpg) no-repeat center center /cover #ddd;
 }
 
 .single-slide-item {
@@ -958,7 +958,7 @@ header {
 /* ====================================== */
 
 .about-title-bg {
-    background: url(../img/aboutUs/aboutUs.jpg) no-repeat center center /cover;
+    background: url(../img/aboutUs/aboutUs-min.jpg) no-repeat center center /cover;
 }
 
 .about-icon li i {
@@ -972,7 +972,7 @@ header {
 /* ====================================== */
 
 .whyConversion ul li {
-    background-image: url(../img/service/Icon.png);
+    background-image: url(../img/service/Icon-min.png);
     background-size: 40px;
     background-repeat: no-repeat;
     padding-left: 60px;
@@ -986,7 +986,7 @@ header {
 /* ====================================== */
 
 .service-title-bg {
-    background: url(../img/service/CRO1.jpg) no-repeat center center /cover;
+    background: url(../img/service/CRO1-min.jpg) no-repeat center center /cover;
 }
 
 .service-item {
@@ -1050,7 +1050,7 @@ header {
 /* ====================================== */
 
 .development-title-bg {
-    background: url(../img/service/development.jpg) no-repeat center center /cover;
+    background: url(../img/service/development-min.jpg) no-repeat center center /cover;
 }
 
 
@@ -1186,7 +1186,7 @@ header {
 /* ====================================== */
 
 .feature {
-    background: url(../img/index/shakeHand.jpg) no-repeat 100% 100% /cover fixed;
+    background: url(../img/index/shakeHand-min.jpg) no-repeat 100% 100% /cover fixed;
 }
 
 .feature a {
@@ -1199,7 +1199,7 @@ header {
 /* ====================================== */
 
 .archive {
-    background: url(../img/index/reviewJob.jpg) no-repeat 100% 100% /cover fixed;
+    background: url(../img/index/reviewJob-min.jpg) no-repeat 100% 100% /cover fixed;
 }
 
 #circle1,
@@ -1312,7 +1312,7 @@ header {
 /* ====================================== */
 
 .partner {
-    background: url(../img/index/shakeHand2.jpg) no-repeat 100% 100% /cover fixed;
+    background: url(../img/index/shakeHand2-min.jpg) no-repeat 100% 100% /cover fixed;
 }
 
 .partner img {
@@ -1389,7 +1389,7 @@ header {
 /* ====================================== */
 
 .error-title-bg {
-    background: url(../img/contactUs/worldImg.jpg) no-repeat center center /cover;
+    background: url(../img/contactUs/worldImg-min.jpg) no-repeat center center /cover;
 }
 
 
@@ -1398,7 +1398,7 @@ header {
 /* ====================================== */
 
 .footer-top {
-    background: url(../img/index/footer-Back.jpg) no-repeat 100% 100% /cover;
+    background: url(../img/index/footer-Back-min.jpg) no-repeat 100% 100% /cover;
 }
 
 .footer-top ul li a {
@@ -1677,7 +1677,7 @@ footer ul {
     }
 }
 
-@media screen and (max-width: 404px) {
+@media screen and (max-width: 440px) {
     .feature .btn-2 {
         margin-bottom: 30px;
     }
