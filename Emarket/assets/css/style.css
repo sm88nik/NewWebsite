@@ -177,6 +177,8 @@ img {
 
 .fw-300 {
     font-weight: 300;
+    position: relative;
+    right: 25px;
 }
 
 .fw-400 {
@@ -929,8 +931,13 @@ header {
 }
 
 .single-slide-item {
-    height: 840px;
+    height: auto;
     overflow: hidden;
+}
+
+.heroBanner {
+    margin-top: 222px !important;
+    margin-bottom: 100px;
 }
 
 .slide-item-table {
@@ -1221,6 +1228,7 @@ header {
     font-size: 48px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+    color: white
 }
 
 #circle4 span {
@@ -1552,6 +1560,15 @@ footer ul {
     }
     .js .slicknav_menu {
         display: block;
+    }
+    .fw-300 {
+        right: 0 !important
+    }
+    .single-slide-item h1 {
+        font-size: 29px !important;
+    }
+    .heroNormalText {
+        font-size: 14px !important;
     }
     .slicknav_menu {
         display: block;
