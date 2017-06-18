@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>RUMI Solutions - Digital Agency</title>
+    <link>http://rumisolutions.com.au</link>
+    <description />
+    <item>
+      <guid>http://rumisolutions.com.au/</guid>
+      <title>RUMI Solutions - Digital Agency</title>
+      <link>http://rumisolutions.com.au/</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://rumisolutions.com.au/index.html</guid>
+      <title>RUMI Solutions Home Page</title>
+      <link>http://rumisolutions.com.au/index.html</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://rumisolutions.com.au/CRO.html</guid>
+      <title>Leading in Conversion Rate Optimisation Services</title>
+      <link>http://rumisolutions.com.au/CRO.html</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://rumisolutions.com.au/development.html</guid>
+      <title>Application Development and Cloud Solution</title>
+      <link>http://rumisolutions.com.au/development.html</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://rumisolutions.com.au/contact.html</guid>
+      <title>Contact Us</title>
+      <link>http://rumisolutions.com.au/contact.html</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://rumisolutions.com.au/about.html</guid>
+      <title>About Us</title>
+      <link>http://rumisolutions.com.au/about.html</link>
+      <description />
+    </item>
+  </channel>
+</rss>
+<!--<guid value="727c643e-7b07-4e1c-a5bf-d40e708ee97f" />-->
